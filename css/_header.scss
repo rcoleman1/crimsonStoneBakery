@@ -1,0 +1,54 @@
+.jumbotron {
+  background: url("../img/bakery-front-2.jpeg") no-repeat center center fixed;
+  background-size: cover;
+  padding-top: 0;
+  height: 600px;
+}
+
+.main-nav {
+  background-color: $darkRed;
+  padding: 10px 0;
+}
+
+.logo {
+  max-width: 150px;
+  width: 100%;
+}
+
+
+
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 575px) {
+  // Main Menu
+  .main-menu {
+    li {
+      padding-left: 10px;
+      margin-bottom: 10px;
+    }
+    li.active {
+      border-left: 2px solid $white;
+    }
+    li:hover {
+      border-left: 2px solid $offWhite;
+      @include hoverTransition;
+    }
+  }
+}
+
+// Media Query: Tablets and up
+@media (min-width: 576px) {
+  // Main Menu
+  .main-menu {
+    li {
+      border-bottom: 2px solid transparent;
+    }
+    li.active {
+      border-bottom: 2px solid $white;
+    }
+    li:hover {
+      border-bottom: 2px solid $offWhite;
+      @include hoverTransition;
+    }
+  }
+}

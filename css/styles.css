@@ -1,15 +1,46 @@
 .jumbotron {
-  padding: 30px; }
-  .jumbotron .container {
-    background-color: pink; }
-  .jumbotron .logo__box {
-    background-color: lime;
-    display: flex;
-    justify-content: right;
-    align-items: center; }
-  .jumbotron .logo {
-    max-width: 150px;
-    width: 100%; }
+  background: url("../img/bakery-front-2.jpeg") no-repeat center center fixed;
+  background-size: cover;
+  padding-top: 0;
+  height: 600px;
+}
 
-.navbar .navbar-nav {
-  background-color: yellow; }
+.main-nav {
+  background-color: #860101;
+  padding: 10px 0;
+}
+
+.logo {
+  max-width: 150px;
+  width: 100%;
+}
+
+@media (max-width: 575px) {
+  .main-menu li {
+    padding-left: 10px;
+    margin-bottom: 10px;
+  }
+  .main-menu li.active {
+    border-left: 2px solid #fff;
+  }
+  .main-menu li:hover {
+    border-left: 2px solid rgba(255, 255, 255, 0.7);
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+  }
+}
+
+@media (min-width: 576px) {
+  .main-menu li {
+    border-bottom: 2px solid transparent;
+  }
+  .main-menu li.active {
+    border-bottom: 2px solid #fff;
+  }
+  .main-menu li:hover {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.7);
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
