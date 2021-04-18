@@ -1,26 +1,56 @@
 .jumbotron {
-  background: url("../img/bakery-front-2.jpeg") no-repeat center center fixed;
+  background: url() no-repeat center center fixed;
+
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/bakery-front-2.jpeg");
+
   background-size: cover;
   padding-top: 0;
   height: 500px;
+  overflow: hidden;
 }
 
 .main-nav {
   background-color: $darkRed;
   padding: 10px 0;
   border-bottom: 2px solid $white;
+  // position: sticky;
+  // z-index: 999;
 }
 
+// Logo Image
 .logo {
   max-width: 150px;
   width: 100%;
+}
+
+// Profile Image and Text
+.profile__container {
+  .profile-img__box {
+    .profile-img {
+      width: 100%;
+      max-width: 250px;
+      border: 2px solid $white;
+      border-radius: 50%;
+    }
+  }
+  .profile-text__box {
+    // background-color: pink;
+    color: $white;
+    h1 {
+      font-size: 2rem;
+    }
+    .address {
+      font-size: $fontSmall;
+      display: none;
+    }
+  }
 }
 
 // Small devices (landscape phones, 576px and up)
 @media (max-width: 575px) {
   // Main Menu
   .main-menu {
-    
     li {
       padding-left: 10px;
       margin-bottom: 10px;
@@ -31,6 +61,22 @@
     li:hover {
       border-left: 2px solid $offWhite;
       @include hoverTransition;
+    }
+  }
+
+  // Profile Image and Text
+  .profile__container {
+    .profile-img__box {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 1rem;
+
+      .profile-img {
+        max-width: 200px;
+      }
+    }
+    .profile-text__box {
+      text-align: center;
     }
   }
 }
@@ -50,4 +96,38 @@
       @include hoverTransition;
     }
   }
+
+  // Profile Image and Text
+  .profile__container {
+    margin-top: 2rem; /* Center profile and text in div */
+
+    .profile-text__box {
+     
+      .address {
+        display: block;
+      }
+    }
+  }
+}
+
+// Media Query: Desktop 
+@media (min-width:768px) {
+  // // Main Menu
+  // .main-menu {
+  //   li {
+  //     border-bottom: 2px solid transparent;
+  //   }
+  //   li.active {
+  //     border-bottom: 2px solid $white;
+  //   }
+  //   li:hover {
+  //     border-bottom: 2px solid $offWhite;
+  //     @include hoverTransition;
+  //   }
+  // }
+
+  // // Profile Image and Text
+  // .profile__container {
+  //   margin-top: 3rem;
+  // }
 }
