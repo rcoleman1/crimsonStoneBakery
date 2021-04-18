@@ -2,12 +2,13 @@
   background: url("../img/bakery-front-2.jpeg") no-repeat center center fixed;
   background-size: cover;
   padding-top: 0;
-  height: 600px;
+  height: 500px;
 }
 
 .main-nav {
   background-color: $darkRed;
   padding: 10px 0;
+  border-bottom: 2px solid $white;
 }
 
 .logo {
@@ -15,13 +16,11 @@
   width: 100%;
 }
 
-
-
-
 // Small devices (landscape phones, 576px and up)
 @media (max-width: 575px) {
   // Main Menu
   .main-menu {
+    
     li {
       padding-left: 10px;
       margin-bottom: 10px;

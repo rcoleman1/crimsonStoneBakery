@@ -1,0 +1,47 @@
+footer {
+  background-color: $darkRed;
+  padding: 20px 0;
+  color: $white;
+
+  // Social Media Links
+  .footer__social-links-box {
+    a {
+      color: $darkRed;
+
+      width: 40px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $white;
+      border-radius: 50px;
+    }
+    .fa {
+      display: block;
+      font-size: 1.4rem;
+    }
+  }
+
+  // Restaurant Address
+  .address-box {
+    padding: 0;
+  }
+  .address {
+    margin: 0;
+    text-align: right;
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 575px) {
+  footer {
+    .footer__social-links-container {
+      justify-content: center;
+      margin-bottom: 15px;
+    }
+
+    .address {
+      text-align: center;
+    }
+  }
+}
