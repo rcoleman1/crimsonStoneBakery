@@ -3,9 +3,9 @@
 
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../img/bakery-front-2.jpeg");
-
   background-size: cover;
   padding-top: 0;
+  margin-bottom: 0;
   height: 500px;
   overflow: hidden;
 }
@@ -26,6 +26,7 @@
 
 // Profile Image and Text
 .profile__container {
+  // Profile Image
   .profile-img__box {
     .profile-img {
       width: 100%;
@@ -34,15 +35,36 @@
       border-radius: 50%;
     }
   }
+
+  // Profile Text
   .profile-text__box {
     // background-color: pink;
     color: $white;
+
     h1 {
       font-size: 2rem;
     }
-    .address {
-      font-size: $fontSmall;
-      display: none;
+
+    // Location: Address, Day-Time
+    .location__box {
+      margin: 0;
+
+      h5 {
+        font-size: $fontSmall;
+        text-decoration: underline;
+      }
+
+      .location__address,
+      .location__day-time {
+        font-size: $fontSmall;
+        display: none;
+      }
+
+      .location__day-time {
+        p {
+          font-size: $fontExtraSmall;
+        }
+      }
     }
   }
 }
@@ -101,33 +123,56 @@
   .profile__container {
     margin-top: 2rem; /* Center profile and text in div */
 
+    // Profile Text
     .profile-text__box {
-     
-      .address {
-        display: block;
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      // Address, Days, Time
+      .location__box {
+        .location__address,
+        .location__day-time {
+          display: block;
+        }
+
+        // .location__address {
+        //   background-color: yellowgreen;
+        // }
+        // .location__day-time {
+        //   background-color: rgb(205, 115, 50);
+        // }
       }
     }
   }
 }
 
-// Media Query: Desktop 
-@media (min-width:768px) {
-  // // Main Menu
-  // .main-menu {
-  //   li {
-  //     border-bottom: 2px solid transparent;
-  //   }
-  //   li.active {
-  //     border-bottom: 2px solid $white;
-  //   }
-  //   li:hover {
-  //     border-bottom: 2px solid $offWhite;
-  //     @include hoverTransition;
-  //   }
-  // }
+// Media Query: Desktop
+@media (min-width: 768px) {
+  .profile__container {
+    // Profile Text
+    .profile-text__box {
+      // background-color: pink;
+      color: $white;
 
-  // // Profile Image and Text
-  // .profile__container {
-  //   margin-top: 3rem;
-  // }
+      h1 {
+        font-size: $fontLarge;
+      }
+    }
+  }
 }
+
+// // Large devices (desktops, 992px and up)
+// @media (min-width: 992px) {
+//   .profile__container {
+//     // Profile Text
+//     .profile-text__box {
+//       // background-color: pink;
+//       color: $white;
+
+//       h1 {
+//         font-size: $fontLarge;
+//       }
+//     }
+//   }
+// }

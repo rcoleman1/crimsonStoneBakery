@@ -4,6 +4,7 @@
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/bakery-front-2.jpeg");
   background-size: cover;
   padding-top: 0;
+  margin-bottom: 0;
   height: 500px;
   overflow: hidden;
 }
@@ -34,9 +35,23 @@
   font-size: 2rem;
 }
 
-.profile__container .profile-text__box .address {
+.profile__container .profile-text__box .location__box {
+  margin: 0;
+}
+
+.profile__container .profile-text__box .location__box h5 {
+  font-size: 0.8rem;
+  text-decoration: underline;
+}
+
+.profile__container .profile-text__box .location__box .location__address,
+.profile__container .profile-text__box .location__box .location__day-time {
   font-size: 0.8rem;
   display: none;
+}
+
+.profile__container .profile-text__box .location__box .location__day-time p {
+  font-size: 0.8rem;
 }
 
 @media (max-width: 575px) {
@@ -85,8 +100,21 @@
     margin-top: 2rem;
     /* Center profile and text in div */
   }
-  .profile__container .profile-text__box .address {
+  .profile__container .profile-text__box h1 {
+    font-size: 1.5rem;
+  }
+  .profile__container .profile-text__box .location__box .location__address,
+  .profile__container .profile-text__box .location__box .location__day-time {
     display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  .profile__container .profile-text__box {
+    color: #fff;
+  }
+  .profile__container .profile-text__box h1 {
+    font-size: 3rem;
   }
 }
 
@@ -159,5 +187,9 @@ footer .address {
 html {
   scroll-behavior: smooth;
   /* Smooth scrolling behavior */
+}
+
+.main-container {
+  background-color: #e3e3e3;
 }
 /*# sourceMappingURL=styles.css.map */
