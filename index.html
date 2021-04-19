@@ -102,7 +102,7 @@
 
               <!-- Days-Time -->
               <div class="location__day-time col-sm-12 col-md-6 p-0">
-                <h5 class="m-0 p-0">Hours of Operation</h5> 
+                <h5 class="m-0 p-0">Hours of Operation</h5>
                 <p class="m-0 p-0">MON-SAT 8AM-5PM</p>
                 <p class="m-0 p-0">SUN 9AM-5PM</p>
               </div>
@@ -114,36 +114,89 @@
     </header>
 
     <section id="main-content">
-      <div class="container main-container">
-        <div class="row">
-          <div class="col">
-            <h3>Welcome</h3>
+      <div class="container main-container py-5">
+        <!-- Welcome -->
+        <div class="welcome__box row justify-content-between">
+          <div class="col-12 text-center mb-3">
+            <h3 class="sub-title ">Welcome</h3>
           </div>
-        </div>
-        <div class="row">
-          <div class="col">bakery</div>
-          <div class="col">coffee</div>
-          <div class="col">catering</div>
+
+          <!-- Bakery -->
+          <div class="col-md-4 px-3 mb-sm-4">
+            <div class="bakery__box card ">
+              <div class="card-header text-center">
+                Bread, Muffins, & Pastries
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  Our bread, muffins, and pastries are baked fresh. In our time honored tradition, we only use the best ingredients. We support the community by sourcing our produce from local farmers. 
+                </p>
+                
+              </div>
+              <div class="card-footer text-center">
+                <a href="#" class="btn btn-warning">Menu</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Coffee -->
+          <div class="col-md-4 px-3 mb-sm-4">
+            <div class="coffee__box card">
+              <div class="card-header text-center"">Coffee & Beverages</div>
+              <div class="card-body">
+                <p class="card-text">
+                  We offer a wide variety of coffee, lattes, and cappuccinos. In addtion, we have juices and bottled water.
+                </p>
+                
+              </div>
+              <div class="card-footer text-center">
+                <a href="#" class="btn btn-warning">Coffee</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Catering -->
+          <div class="col-md-4 px-3">
+            <div class="catering__box card">
+              <div class="card-header text-center"">Catering</div>
+              <div class="card-body">
+                <p class="card-text">
+                  We offer catering services. Our experienced staff can fullfill your minimum and large event orders. Please contact us within 10 business days of your event.    
+                </p>
+                
+              </div>
+              <div class="card-footer text-center">
+                <a href="#" class="btn btn-warning">Catering</a>
+              </div>
+
+            </div>
+          </div>
         </div>
 
-        <div class="row">
-          <div class="col">
-            <h3>Gallery</h3>
+        <!-- Gallery -->
+        <div class="gallery-container row py-5">
+          <div class="col-12 text-center mb-3">
+            <h3 class="sub-title ">Gallery</h3>
           </div>
-        </div>
-        <div class="gallery-container row">
           <div class="col">Store Gallery/Features</div>
         </div>
+        <!-- END  Gallery -->
 
-        <div class="row">
-          <div class="col">
-            <h3>Map</h3>
+        <!-- Map -->
+        <div class="map-container row py-5">
+          <div class="col-12 text-center mb-3">
+            <h3 class="sub-title">Map</h3>
           </div>
-        </div>
-        <div class="map-container row">
           <div class="col">
             <div id="map">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3352.614260460001!2d-79.83243714903816!3d32.828984188547324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88fe71f623701fcd%3A0xc2f0645353642dda!2s1218%20Belk%20Dr%2C%20Mt%20Pleasant%2C%20SC%2029464!5e0!3m2!1sen!2sus!4v1618852465966!5m2!1sen!2sus" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3352.614260460001!2d-79.83243714903816!3d32.828984188547324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88fe71f623701fcd%3A0xc2f0645353642dda!2s1218%20Belk%20Dr%2C%20Mt%20Pleasant%2C%20SC%2029464!5e0!3m2!1sen!2sus!4v1618852465966!5m2!1sen!2sus"
+                width="100%"
+                height="300"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+              ></iframe>
             </div>
           </div>
         </div>
@@ -165,14 +218,10 @@
             >
               <i class="fa fa-chevron-up fa-lg" aria-hidden="true"></i>
             </a>
-
-            <!-- <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
-              Tooltip on top
-            </button> -->
           </div>
         </div>
 
-        <!-- Social Media Links -->
+        <!-- Social Media Links + Address -->
         <div class="row">
           <div
             class="footer__social-links-container col-12 col-sm-6 p-0 d-flex align-items-sm-center"
@@ -203,7 +252,7 @@
           <!-- Address -->
           <div class="address-box col-12 col-sm-6">
             <address class="address">
-              1234 Washington Street <br />
+              1218 Belk Dr <br />
               Mt Pleasant, South Carolina 29464 <br />
               <span><i class="fa fa-phone" aria-hidden="true"></i></span>
               555.555.5555
@@ -218,6 +267,5 @@
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="scripts.js"></script>
-    
   </body>
 </html>

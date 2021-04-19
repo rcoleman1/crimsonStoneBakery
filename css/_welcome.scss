@@ -1,0 +1,63 @@
+.welcome__box {
+  color: white;
+
+  .card {
+    border: none;
+  }
+  .btn {
+    color: $white;
+    &:hover {
+    }
+  }
+
+  .card-header {
+    background-color: $greyDark;
+    font-size: $fontMedium;
+  }
+  .card-footer {
+    background-color: $darkRed;
+  }
+
+  // Bakery
+  .bakery__box {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../img/menu-bread-splash.jpeg");
+    background-size: cover;
+    padding-top: 0;
+    margin-bottom: 0;
+    height: 300px;
+    overflow: hidden;
+  }
+
+  // Coffee
+  .coffee__box {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../img/coffee-splash.jpeg");
+    background-size: cover;
+    padding-top: 0;
+    margin-bottom: 0;
+    height: 300px;
+    overflow: hidden;
+  }
+
+  // Catering
+  .catering__box {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../img/catering_splash.jpeg");
+    background-size: cover;
+    padding-top: 0;
+    margin-bottom: 0;
+    height: 300px;
+    overflow: hidden;
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 575px) {
+  .welcome__box {
+    .bakery__box,
+    .coffee__box {
+      margin-bottom: 1.5rem;
+    }
+  }
+}

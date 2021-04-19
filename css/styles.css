@@ -1,5 +1,4 @@
 .jumbotron {
-  background: url() no-repeat center center fixed;
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../img/bakery-front-2.jpeg");
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/bakery-front-2.jpeg");
   background-size: cover;
@@ -10,7 +9,7 @@
 }
 
 .main-nav {
-  background-color: #860101;
+  background-color: #a20202;
   padding: 10px 0;
   border-bottom: 2px solid #fff;
 }
@@ -64,8 +63,8 @@
   }
   .main-menu li:hover {
     border-left: 2px solid rgba(255, 255, 255, 0.7);
-    -webkit-transition: all .5s ease-in-out;
-    transition: all .5s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
   }
   .profile__container .profile-img__box {
     display: -webkit-box;
@@ -93,8 +92,8 @@
   }
   .main-menu li:hover {
     border-bottom: 2px solid rgba(255, 255, 255, 0.7);
-    -webkit-transition: all .5s ease-in-out;
-    transition: all .5s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
   }
   .profile__container {
     margin-top: 2rem;
@@ -118,8 +117,74 @@
   }
 }
 
+.welcome__box {
+  color: white;
+}
+
+.welcome__box .card {
+  border: none;
+}
+
+.welcome__box .btn {
+  color: #fff;
+}
+
+.welcome__box .card-header {
+  background-color: black;
+  font-size: 1.5rem;
+}
+
+.welcome__box .card-footer {
+  background-color: #a20202;
+}
+
+.welcome__box .bakery__box {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../img/menu-bread-splash.jpeg");
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/menu-bread-splash.jpeg");
+  background-size: cover;
+  padding-top: 0;
+  margin-bottom: 0;
+  height: 300px;
+  overflow: hidden;
+}
+
+.welcome__box .coffee__box {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../img/coffee-splash.jpeg");
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/coffee-splash.jpeg");
+  background-size: cover;
+  padding-top: 0;
+  margin-bottom: 0;
+  height: 300px;
+  overflow: hidden;
+}
+
+.welcome__box .catering__box {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../img/catering_splash.jpeg");
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/catering_splash.jpeg");
+  background-size: cover;
+  padding-top: 0;
+  margin-bottom: 0;
+  height: 300px;
+  overflow: hidden;
+}
+
+@media (max-width: 575px) {
+  .welcome__box .bakery__box,
+  .welcome__box .coffee__box {
+    margin-bottom: 1.5rem;
+  }
+}
+
+#map {
+  width: 100%;
+  height: 300px;
+  border: 2px solid #a20202;
+  overflow: hidden;
+  /* Keep map from breaking out of container */
+}
+
 footer {
-  background-color: #860101;
+  background-color: #a20202;
   padding: 20px 0;
   color: #fff;
 }
@@ -130,12 +195,12 @@ footer .btn__scroll-top {
 
 footer .btn__scroll-top:hover {
   color: rgba(255, 255, 255, 0.7);
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 
 footer .footer__social-links-box a {
-  color: #860101;
+  color: #a20202;
   width: 40px;
   height: 40px;
   display: -webkit-box;
@@ -153,8 +218,8 @@ footer .footer__social-links-box a {
 
 footer .footer__social-links-box a:hover {
   background-color: rgba(255, 255, 255, 0.7);
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 
 footer .footer__social-links-box .fa {
@@ -190,6 +255,12 @@ html {
 }
 
 .main-container {
-  background-color: #e3e3e3;
+  background-color: #f1f1f1;
+}
+
+.sub-title {
+  color: #a20202;
+  font-size: 2.5rem;
+  text-decoration: underline;
 }
 /*# sourceMappingURL=styles.css.map */
