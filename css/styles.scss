@@ -2,3 +2,9 @@
 @import "custom-mixin.scss";
 @import "header.scss";
 @import "footer.scss";
+
+// General Styles
+html {
+    scroll-behavior: smooth; /* Smooth scrolling behavior */
+}
+

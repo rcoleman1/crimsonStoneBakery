@@ -96,6 +96,16 @@ footer {
   color: #fff;
 }
 
+footer .btn__scroll-top {
+  color: #fff;
+}
+
+footer .btn__scroll-top:hover {
+  color: rgba(255, 255, 255, 0.7);
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
 footer .footer__social-links-box a {
   color: #860101;
   width: 40px;
@@ -111,6 +121,12 @@ footer .footer__social-links-box a {
           align-items: center;
   background-color: #fff;
   border-radius: 50px;
+}
+
+footer .footer__social-links-box a:hover {
+  background-color: rgba(255, 255, 255, 0.7);
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
 }
 
 footer .footer__social-links-box .fa {
@@ -138,5 +154,10 @@ footer .address {
   footer .address {
     text-align: center;
   }
+}
+
+html {
+  scroll-behavior: smooth;
+  /* Smooth scrolling behavior */
 }
 /*# sourceMappingURL=styles.css.map */

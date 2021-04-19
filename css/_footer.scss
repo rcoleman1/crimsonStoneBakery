@@ -3,11 +3,19 @@ footer {
   padding: 20px 0;
   color: $white;
 
+  // Scroll top button
+  .btn__scroll-top{
+    color: $white;
+    &:hover{
+        color: $offWhite;
+        @include hoverTransition;
+    }
+  }
+
   // Social Media Links
   .footer__social-links-box {
     a {
       color: $darkRed;
-
       width: 40px;
       height: 40px;
       display: flex;
@@ -15,6 +23,10 @@ footer {
       align-items: center;
       background-color: $white;
       border-radius: 50px;
+      &:hover{
+        background-color: $offWhite;
+        @include hoverTransition;
+    }
     }
     .fa {
       display: block;
