@@ -1,0 +1,24 @@
+.gallery__container {
+  .card-body {
+    height: 300px;
+    background-color: $darkRed;
+  }
+  
+  .gallery__img-box {
+    width: 100%;
+    height: 100%;
+   
+  }
+  .gallery__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 575px) {
+    .gallery {
+        margin-bottom: 1.5rem;
+    }
+}
