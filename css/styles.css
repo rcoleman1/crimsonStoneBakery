@@ -32,6 +32,7 @@
 
 .profile__container .profile-text__box h1 {
   font-size: 2rem;
+  text-decoration: underline;
 }
 
 .profile__container .profile-text__box .location__box {
@@ -198,6 +199,21 @@
   }
 }
 
+.menu__title {
+  font-size: 4rem;
+}
+
+.menu__box img {
+  height: 220px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.menu__box .price {
+  font-size: 0.8rem;
+  font-weight: lighter;
+}
+
 #map {
   width: 100%;
   height: 300px;
@@ -272,6 +288,11 @@ footer .address {
   }
 }
 
+@font-face {
+  font-family: 'Courgette', cursive;
+  src: url("../font/Courgette-Regular.ttf") format("truetype");
+}
+
 html {
   scroll-behavior: smooth;
   /* Smooth scrolling behavior */
@@ -281,9 +302,43 @@ html {
   background-color: #f1f1f1;
 }
 
+.title__cursive {
+  /* !important to overwrite table size media query style */
+  text-decoration: underline;
+  font-family: 'Courgette', cursive;
+}
+
+.splash__font-size-large {
+  /* !important to overwrite table size media query style */
+  font-size: 4rem !important;
+}
+
+@media (max-width: 575px) {
+  .splash__font-size-large {
+    font-size: 3rem !important;
+  }
+}
+
+.splash-info__font-size-medium {
+  /* !important to overwrite table size media query style */
+  font-size: 1.2rem !important;
+}
+
 .sub-title {
   color: #a20202;
   font-size: 2.5rem;
   text-decoration: underline;
+}
+
+.line {
+  width: 100%;
+  height: 2px;
+  background-color: #a20202;
+}
+
+@media (max-width: 575px) {
+  .seperate__mb {
+    margin-bottom: 4rem;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

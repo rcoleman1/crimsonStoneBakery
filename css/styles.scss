@@ -1,12 +1,19 @@
+// @import url("../font/Courgette-Regular.ttf");
 @import "variables.scss";
 @import "custom-mixin.scss";
 @import "header.scss";
 @import "welcome.scss";
 @import "gallery.scss";
+@import "menu.scss";
 @import "map.scss";
 @import "footer.scss";
 
 // General Styles
+@font-face {
+    font-family: 'Courgette', cursive;
+    src: url("../font/Courgette-Regular.ttf") format("truetype");
+ }
+
 html {
     scroll-behavior: smooth; /* Smooth scrolling behavior */
 }
@@ -16,9 +23,39 @@ html {
     background-color: $grey;
 }
 
+.title__cursive {
+    /* !important to overwrite table size media query style */
+    text-decoration: underline;
+    font-family: 'Courgette', cursive;
+}
+.splash__font-size-large {
+    /* !important to overwrite table size media query style */
+    font-size: 4rem !important; 
+
+    // Small devices (landscape phones, 576px and up)
+    @media (max-width: 575px) {
+        font-size: 3rem !important;
+    }
+}
+.splash-info__font-size-medium {
+    /* !important to overwrite table size media query style */
+    font-size: 1.2rem !important; 
+}
+
 .sub-title{
     color: $darkRed;
     font-size: 2.5rem;
     text-decoration: underline;
 }
+.line{
+    width: 100%;
+    height: 2px;
+    background-color: $darkRed;
+}
 
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 575px) {
+    .seperate__mb {
+      margin-bottom: 4rem;
+    }
+  }

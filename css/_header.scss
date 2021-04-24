@@ -1,6 +1,4 @@
 .jumbotron {
-  // background: url() no-repeat center center fixed;
-
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../img/bakery-front-2.jpeg");
   background-size: cover;
@@ -14,8 +12,6 @@
   background-color: $darkRed;
   padding: 10px 0;
   border-bottom: 2px solid $white;
-  // position: sticky;
-  // z-index: 999;
 }
 
 // Logo Image
@@ -43,6 +39,7 @@
 
     h1 {
       font-size: 2rem;
+      text-decoration: underline;
     }
 
     // Location: Address, Day-Time
@@ -135,13 +132,6 @@
         .location__day-time {
           display: block;
         }
-
-        // .location__address {
-        //   background-color: yellowgreen;
-        // }
-        // .location__day-time {
-        //   background-color: rgb(205, 115, 50);
-        // }
       }
     }
   }
@@ -152,7 +142,6 @@
   .profile__container {
     // Profile Text
     .profile-text__box {
-      // background-color: pink;
       color: $white;
 
       h1 {
@@ -161,18 +150,3 @@
     }
   }
 }
-
-// // Large devices (desktops, 992px and up)
-// @media (min-width: 992px) {
-//   .profile__container {
-//     // Profile Text
-//     .profile-text__box {
-//       // background-color: pink;
-//       color: $white;
-
-//       h1 {
-//         font-size: $fontLarge;
-//       }
-//     }
-//   }
-// }

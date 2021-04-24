@@ -1,0 +1,17 @@
+.menu__title {
+  font-size: 4rem;
+}
+
+.menu__box {
+  img {
+    height: 220px;
+    object-fit: cover;
+  }
+
+  .price {
+    font-size: $fontExtraSmall;
+    font-weight: lighter;
+  }
+}
+
+

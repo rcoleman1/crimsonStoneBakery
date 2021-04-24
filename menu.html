@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="node_modules/font-awesome/css/font-awesome.min.css"
+    />
+    <!-- Imported -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <title>Crimson Stone Bakery</title>
+  </head>
+  <body>
+    <header class="jumbotron jumbotron-fluid" id="header">
+      <!-- Main Nav -->
+      <nav
+        class="main-nav navbar navbar-expand-sm navbar-dark sticky-top"
+        id="mainNav"
+      >
+        <div class="container px-3">
+          <!-- Logo -->
+          <a href="#" class="navbar-brand">
+            <img class="logo" src="img/svg/logo-white-300.svg" alt="" />
+          </a>
+
+          <!-- Mobile Menu Toggle Button -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#mainMenu"
+            aria-controls="mainMenu"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Main Menu -->
+          <div class="main-menu collapse navbar-collapse" id="mainMenu">
+            <!-- <div class="navbar navbar-expand-sm p-0"> -->
+            <ul class="navbar-nav ml-auto">
+              <!-- Home -->
+              <li class="nav-item ml-2">
+                <a class="nav-link" href="index.html"
+                  >Home <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <!-- Menu -->
+              <li class="nav-item active ml-2">
+                <a class="nav-link" href="#">Menu</a>
+              </li>
+
+              <!-- Contact -->
+              <li class="nav-item ml-2">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+            <!-- </div> -->
+          </div>
+          <!-- END Main Menu -->
+        </div>
+      </nav>
+      <!-- END .main-nav -->
+
+      <!-- Menu -->
+      <div class="profile__container container py-3">
+        <div class="row">
+            <div class="col">
+                <!-- Profile Text -->
+                <div class="profile-text__box col-12 text-center p-0">
+                  <h1 class="title__cursive splash__font-size-large">Bakery and Cafe Menu</h1>
+                  <p class="splash-info__font-size-medium ">We combine our traditional culinary roots with the modern tastes. Using only the best and simplest of ingredients - flour, water, salt, and yeast - We provide you with delightful handcrafted breads and pastries.</p>
+                </div>
+
+            </div>
+        </div>
+      </div>
+    </header>
+
+    <section id="main-content">
+      <div class="container main-container py-5">
+        <!-- Breads Section -->
+        <div class="menu__box row justify-content-between mb-sm-5 seperate__mb">
+          <div class="col-12 text-center mb-3">
+            <h3 class="sub-title title__cursive">Breads</h3>
+          </div>
+
+          <!-- Brioche -->
+          <div class="col-md-4 px-3 mb-sm-4">
+            <div class="card">
+              <img class="card-img-top" src="/img/bread-brioche.jpeg" alt="" />
+              <div class="card-body">
+                <p class="card-text text-center">
+                  Brioche <span class="price">/ Loaf 6.00</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Ciabatta -->
+          <div class="col-md-4 px-3 mb-sm-4">
+            <div class="card">
+              <img class="card-img-top" src="/img/bread-ciabatta.jpeg" alt="" />
+              <div class="card-body">
+                <p class="card-text text-center">
+                  Ciabatta: <span class="price">/ Loaf 6.00</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Focaccia -->
+          <div class="col-md-4 px-3 mb-sm-4">
+            <div class="card">
+              <img class="card-img-top" src="/img/bread-focaccia.jpeg" alt="" />
+              <div class="card-body">
+                <p class="card-text text-center">
+                  Focaccia <span class="price">/ Loaf 6.00</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pumpernickel -->
+          <div class="col-md-4 px-3 mb-sm-4">
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="/img/bread-pumpernickel.jpeg"
+                alt=""
+              />
+              <div class="card-body">
+                <p class="card-text text-center">
+                  Pumpernickel <span class="price">/ Loaf 6.00</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Rye -->
+          <div class="col-md-4 px-3 mb-sm-4">
+            <div class="card">
+              <img class="card-img-top" src="/img/bread-rye.jpeg" alt="" />
+              <div class="card-body">
+                <p class="card-text text-center">
+                  Rye <span class="price">/ Loaf 6.00</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sourdough -->
+          <div class="col-md-4 px-3 mb-sm-4">
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="/img/bread-sourdough.jpeg"
+                alt=""
+              />
+              <div class="card-body">
+                <p class="card-text text-center">
+                  Sourdough <span class="price">/ Loaf 6.00</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Bread Section -->
+
+        <!-- Pastry Section -->
+        <div class="menu__box row justify-content-between mb-sm-5 seperate__mb">
+          <div class="col-12 text-center mb-3">
+            <h3 class="sub-title title__cursive">Pastries</h3>
+          </div>
+
+          <!-- Cheese Danish -->
+          <div class="col-md-4 px-3 mb-sm-4">
+            <div class="card">
+              <img class="card-img-top" src="/img/danish-cheese.jpeg" alt="" />
+              <div class="card-body">
+                <p class="card-text text-center">
+                  Cheese Danish <span class="price">/ 1.50</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Fruit Tarts -->
+          <div class="col-md-4 px-3 mb-sm-4">
+            <div class="card">
+              <img class="card-img-top" src="/img/fruit-tart.jpeg" alt="" />
+              <div class="card-body">
+                <p class="card-text text-center">
+                  Fruit Tarts <span class="price">/ 1.50</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Scones -->
+          <div class="col-md-4 px-3 mb-sm-4">
+            <div class="card">
+              <img class="card-img-top" src="/img/scone.jpeg" alt="" />
+              <div class="card-body">
+                <p class="card-text text-center">
+                  Scones <span class="price">/ 1.50</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Banana Muffin -->
+          <div class="col-md-4 px-3 mb-sm-4">
+            <div class="card">
+              <img class="card-img-top" src="/img/muffin-banana.jpeg" alt="" />
+              <div class="card-body">
+                <p class="card-text text-center">
+                  Banana Nut Muffin <span class="price">/ 1.50</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Blueberry Muffin -->
+          <div class="col-md-4 px-3 mb-sm-4">
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="/img/muffin-blueberry.jpeg"
+                alt=""
+              />
+              <div class="card-body">
+                <p class="card-text text-center">
+                  Blueberry Muffin <span class="price">/ 1.50</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cranberry Muffin -->
+          <div class="col-md-4 px-3 mb-sm-4">
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="/img/muffin-cranberry-orange.jpeg"
+                alt=""
+              />
+              <div class="card-body">
+                <p class="card-text text-center">
+                  Cran-Orange Muffin <span class="price">/ 1.50</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Pastry Section -->
+
+        <!-- Coffee, Tea, Juice Section-->
+        <div class="menu__box row justify-content-between seperate__mb">
+          <div class="col-12 text-center mb-3">
+            <h3 class="sub-title title__cursive">Coffee & Beverages</h3>
+          </div>
+            <!-- LEFT COLUMN  -->
+            <div class="col-md-4 px-3 mb-sm-6">
+              <h5 class="text-center">Coffee</h5>
+              <div class="line"></div>
+              <ul>
+                <li>
+                  House Coffee:
+                  <span class="price mr-2">Small 1.00 / Large 2.00</span>
+                </li>
+                <li>
+                  Latte:
+                  <span class="price">Small 1.00 / Large 2.00</span>
+                </li>
+                <li>
+                  Cappuccino:
+                  <span class="price">Small 1.00 / Large 2.00</span>
+                </li>
+                <li>
+                  Espresso:
+                  <span class="price">Small 1.00 / Large 2.00</span>
+                </li>
+                <li>
+                  Mocha:
+                  <span class="price">Small 1.00 / Large 2.00</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Middle COLUMN  -->
+            <div class="col-md-4 px-3 mb-sm-6">
+              <h5  class="text-center">Tea and Chai</h5>
+              <div class="line"></div>
+              <ul>
+                <li>
+                  Earl Grey:
+                  <span class="price">Small 1.00 / Large 1.50</span>
+                </li>
+                <li>
+                  Green Tea:
+                  <span class="price">Small 1.00 / Large 1.50</span>
+                </li>
+                <li>
+                  Chai:
+                  <span class="price">Small 1.00 / Large 1.50</span>
+                </li>
+                <li>
+                  Chai Latte:
+                  <span class="price">Small 1.00 / Large 1.50</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Right COLUMN  -->
+            <div class="col-md-4 px-3 mb-sm-6">
+              <h5 class="text-center">Smoothies & Water</h5>
+              <div class="line"></div>
+              <ul>
+                <li>
+                  Strawberry Dream:
+                  <span class="price">Small 2.00 / Large 2.50</span>
+                </li>
+                <li>
+                  Carribean Mango:
+                  <span class="price">Small 2.00 / Large 2.50</span>
+                </li>
+                <li>
+                  Orange Pineapple:
+                  <span class="price">Small 2.00 / Large 2.50</span>
+                </li>
+                <li>
+                  Bottled Water:
+                  <span class="price"> 1.50</span>
+                </li>
+              </ul>
+            </div>
+          
+        </div>
+        <!-- END Coffee, Tea, Juice Section-->
+      </div>
+      <!-- END .main-container -->
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <!-- Scroll Top Screen -->
+        <div class="row">
+          <div class="col d-flex justify-content-center mb-3">
+            <a
+              class="btn__scroll-top"
+              href="#header"
+              data-toggle="tooltip"
+              data-placement="top"
+              title="Scroll to top"
+            >
+              <i class="fa fa-chevron-up fa-lg" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Social Media Links + Address -->
+        <div class="row">
+          <div
+            class="footer__social-links-container col-12 col-sm-6 p-0 d-flex align-items-sm-center"
+          >
+            <ul class="footer__social-links-box nav">
+              <!-- Facebook -->
+              <li class="nav-item mr-2">
+                <a class="nav-link" href="#">
+                  <i class="fa fa-facebook" aria-hidden="true"></i>
+                </a>
+              </li>
+              <!-- Twitter -->
+              <li class="nav-item mr-2">
+                <a class="nav-link" href="#">
+                  <i class="fa fa-twitter" aria-hidden="true"></i>
+                </a>
+              </li>
+              <!-- Instagram -->
+              <li class="nav-item mr-2">
+                <a class="nav-link" href="#">
+                  <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- END Social Media Links -->
+
+          <!-- Address -->
+          <div class="address-box col-12 col-sm-6">
+            <address class="address">
+              1218 Belk Dr <br />
+              Mt Pleasant, South Carolina 29464 <br />
+              <span><i class="fa fa-phone" aria-hidden="true"></i></span>
+              555.555.5555
+            </address>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="scripts.js"></script>
+  </body>
+</html>
