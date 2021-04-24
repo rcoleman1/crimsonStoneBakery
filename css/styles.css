@@ -336,6 +336,11 @@ html {
   background-color: #a20202;
 }
 
+.box-shadow {
+  -webkit-box-shadow: -1px 5px 10px 0px rgba(0, 0, 0, 0.4);
+          box-shadow: -1px 5px 10px 0px rgba(0, 0, 0, 0.4);
+}
+
 @media (max-width: 575px) {
   .seperate__mb {
     margin-bottom: 4rem;

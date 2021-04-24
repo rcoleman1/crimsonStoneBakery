@@ -52,6 +52,9 @@ html {
     height: 2px;
     background-color: $darkRed;
 }
+.box-shadow {
+    box-shadow: -1px 5px 10px 0px rgba(0,0,0,0.4);
+}
 
 // Small devices (landscape phones, 576px and up)
 @media (max-width: 575px) {
